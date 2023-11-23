@@ -1,16 +1,18 @@
-export const App = () => {
+import React from 'react';
+import ContactBook from './ContactBook';
+import ImageSearch from './ImageSearch';
+import './styles.css';
+
+const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
+    <div>
+      <h1>Contact Book</h1>
+      <ContactBook />
+
+      <h1>Image Search</h1>
+      <ImageSearch />
     </div>
   );
 };
+
+export default App;
